@@ -1,18 +1,18 @@
 class Point {
     
-    constructor(public x:number){
+    constructor(private _x:number){
 
     }
-    get X() {
-        return this.x;
+    get x() {
+        return this._x;
     }
     
-    set X(val : number) {
-        this.x = val;
+    set x(val : number) {
+        this._x = val;
     }
     
 }
 let obj = new Point(10);
-console.log(obj.X);
-obj.X=20;
-console.log(obj.X);
+console.log(obj.x);
+obj.x=20;
+console.log(obj.x);

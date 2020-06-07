@@ -1,13 +1,13 @@
 var Point = /** @class */ (function () {
-    function Point(x) {
-        this.x = x;
+    function Point(_x) {
+        this._x = _x;
     }
-    Object.defineProperty(Point.prototype, "X", {
+    Object.defineProperty(Point.prototype, "x", {
         get: function () {
-            return this.x;
+            return this._x;
         },
         set: function (val) {
-            this.x = val;
+            this._x = val;
         },
         enumerable: false,
         configurable: true
@@ -15,6 +15,6 @@ var Point = /** @class */ (function () {
     return Point;
 }());
 var obj = new Point(10);
-console.log(obj.X);
-obj.X = 20;
-console.log(obj.X);
+console.log(obj.x);
+obj.x = 20;
+console.log(obj.x);
